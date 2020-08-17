@@ -1,5 +1,6 @@
-//const apiRoutes = require("./routes/apiRoutes")
 const htmlRoutes = require("./routes/htmlRoutes")
+const apiRoutes = require("./routes/apiRoutes")
+
 const fs = require("fs")
 const path = require("path")
 const { notes } = require("./db/db")
@@ -11,7 +12,7 @@ app.use(express.urlencoded({ extended: true}));
 
 app.use(express.json());
 
-//app.use("/api", apiRoutes);
+app.use("/api", apiRoutes);
 
 app.use("/", htmlRoutes);
 
