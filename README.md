@@ -23,12 +23,14 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+## Website
+https://stormy-savannah-44764.herokuapp.com/
+## Github Link
+https://github.com/sanders43/note-taker-project
 
 ## Screenshot
+<img src="./public/assets/images/image1.png">
+<img src="./public/assets/images/image2.png">
 
 ## Built With
 HTML
@@ -38,3 +40,7 @@ Node
 Express
 Jest(Testing)
 Insomnia
+
+## Built BY
+
+Zachary Sanders
