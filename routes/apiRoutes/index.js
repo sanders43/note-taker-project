@@ -9,7 +9,7 @@ router.get("/notes", (req,res) => {
 
 
 router.post("/notes", (req,res) => {
-    req.body.id = notes.length.toString();
+    req.body.id = Math.floor(Math.random()*999999999).toString();
     if(!validateNote(req.body)) {
         res.status(400).send("The note is not properly formatted.");
     } else {
@@ -19,12 +19,8 @@ router.post("/notes", (req,res) => {
 });
 
 router.delete("/notes/:id", (req, res) => {
-const result = deleteById(req.params.id, notes);
-if (result) {
-    res.json.remove(result)
-} else {
-    res.send(404);
-}
+notes.splice(req.body.id,1)
+res.send("Note deleted")
 });
 
 module.exports = router;

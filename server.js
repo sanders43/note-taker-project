@@ -5,7 +5,7 @@ const fs = require("fs")
 const path = require("path")
 const { notes } = require("./db/db")
 const express = require("express")
-const PORT = process.env.Port || 3001
+const PORT = process.env.Port || 3001;
 const app = express();
 
 app.use(express.urlencoded({ extended: true}));
